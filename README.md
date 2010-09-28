@@ -32,12 +32,12 @@ The purpose of this plugin is to be able to put your placeholders in the HTML5 p
 <h1>PLACEHOLDER USAGE</h1>
 
 <pre>
-$('input:text').outOfPlace();
+$('input[placeholder], textarea[placeholder]').outOfPlace();
 </pre>
 
 Options:
 <pre>
-$('input:text').outOfPlace({
+$('input[placeholder], textarea[placeholder]').outOfPlace({
     
     // Gives you control over the submit function if needed
     // The default function removes the placeholder before
