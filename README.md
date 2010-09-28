@@ -7,8 +7,8 @@ Source       - <a href="http://github.com/timmywil/html5placeholders/raw/master/
 
 License
 
-Copyright (c) 2010 timmy willison
-Dual licensed under the MIT and GPL licenses.
+Copyright (c) 2010 timmy willison<br/>
+Dual licensed under the MIT and GPL licenses.<br/>
 http://timmywillison.com/license/
 
 Support and Testing
