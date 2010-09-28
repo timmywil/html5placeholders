@@ -31,6 +31,8 @@ The purpose of this plugin is to be able to put your placeholders in the HTML5 p
 
 <h1>PLUGIN USAGE</h1>
 
+Javascript
+
 <pre>
 $('input[placeholder], textarea[placeholder]').outOfPlace();
 </pre>
@@ -61,12 +63,12 @@ $('input[placeholder], textarea[placeholder]').outOfPlace({
 });
 </pre>
   
-Then, your html for all browsers will look like this:
+Then, your HTML for all browsers will look like this:
 <pre>
 &lt;input type=&quot;text&quot; placeholder=&quot;Name&quot;/&gt;
 </pre>
 
-Your css will look something like this:
+Your CSS will look something like this:
 <pre>
 .place {
     color: #666;
