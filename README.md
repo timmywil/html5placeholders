@@ -70,8 +70,6 @@ $('input[placeholder], textarea[placeholder]').outOfPlace({
     // The placeholder class for setting
     // placeholder styles in your own css
     // e.g. input.place { color: #666666; }
-    // This creates a lot more flexibility for you and
-    // keeps the js lightweight
     placeholderClass: 'place'
 });
 </pre>
