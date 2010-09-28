@@ -37,7 +37,20 @@ Javascript
 $('input[placeholder], textarea[placeholder]').outOfPlace();
 </pre>
 
-Options:
+Then, your HTML for all browsers will look like this:
+<pre>
+&lt;input type=&quot;text&quot; placeholder=&quot;Name&quot;/&gt;
+</pre>
+
+Your CSS will look something like this:
+<pre>
+.place {
+    color: #666;
+}
+</pre>
+
+<h3>Available options</h3>
+
 <pre>
 $('input[placeholder], textarea[placeholder]').outOfPlace({
     
@@ -61,16 +74,4 @@ $('input[placeholder], textarea[placeholder]').outOfPlace({
     // keeps the js lightweight
     placeholderClass: 'place'
 });
-</pre>
-  
-Then, your HTML for all browsers will look like this:
-<pre>
-&lt;input type=&quot;text&quot; placeholder=&quot;Name&quot;/&gt;
-</pre>
-
-Your CSS will look something like this:
-<pre>
-.place {
-    color: #666;
-}
 </pre>
