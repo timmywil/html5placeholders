@@ -3,7 +3,7 @@
 *   HTML5 placeholders for all browsers
 *   Copyright (c) 2010 timmy willison
 *   Dual licensed under the MIT and GPL licenses.
-*   http://timmywillison.com/license/
+*   http://timmywillison.com/licence/
 */
 
 // *Version: 1.0, Last updated: 9/27/2010*
@@ -17,7 +17,7 @@
 // 
 // Copyright (c) 2010 timmy willison
 // Dual licensed under the MIT and GPL licenses.
-// http://timmywillison.com/license/
+// http://timmywillison.com/licence/
 // 
 // Support and Testing
 // 
