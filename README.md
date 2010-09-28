@@ -1,9 +1,9 @@
 *Version: 1.0, Last updated: 9/27/2010*
 
-Demo         - http://timmywillison.com/samples/html5placeholders/
-GitHub       - http://github.com/timmywil/html5placeholders
-Source       - http://github.com/timmywil/requiredfields/raw/master/jquery.html5placeholders.js (3.2kb)
-(Minified)   - http://github.com/timmywil/requiredfields/raw/master/jquery.html5placeholders.min.js (<1kb)
+Demo         - <a href="http://timmywillison.com/samples/html5placeholders/">http://timmywillison.com/samples/html5placeholders/</a><br/>
+GitHub       - <a href="http://github.com/timmywil/html5placeholders">http://github.com/timmywil/html5placeholders</a><br/>
+Source       - <a href="http://github.com/timmywil/html5placeholders/raw/master/jquery.html5placeholders.js">http://github.com/timmywil/html5placeholders/raw/master/jquery.html5placeholders.js</a> (3.2kb)<br/>
+(Minified)   - <a href="http://github.com/timmywil/html5placeholders/raw/master/jquery.html5placeholders.min.js">http://github.com/timmywil/html5placeholders/raw/master/jquery.html5placeholders.min.js</a> (<1kb)</br/>
 
 License
 
@@ -16,8 +16,8 @@ Support and Testing
 Versions of jQuery and browsers this was tested on.
 
 jQuery Versions - 1.3.0-1.4.2
-Browsers Tested - Internet Explorer 6-8, Firefox 2-3.7, Safari 3-5,
-                  Chrome 4-5, Opera 9.6-10.5.
+Browsers Tested - Internet Explorer 6-8, Firefox 2-3.7, Safari 3-5,<br/>
+Chrome 4-5, Opera 9.6-10.5.
 
 Release History
 
