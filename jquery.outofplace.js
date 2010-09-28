@@ -29,7 +29,7 @@
 // 
 // Release History
 // 
-// 0.9   - (9/27/2010) Initial release
+// 1.0   - (9/27/2010) Initial release
 // 
 // See README for usage
 

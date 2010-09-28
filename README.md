@@ -21,7 +21,7 @@ Chrome 4-5, Opera 9.6-10.5.
 
 Release History
 
-0.9   - (9/27/2010) Initial release
+1.0   - (9/27/2010) Initial release
 
 *HTML5 placeholders across all browsers*
 
