@@ -1,4 +1,4 @@
-/*!
+/*
 *   jquery.outofplace.js
 *   HTML5 placeholders for all browsers
 *   Copyright (c) 2010 timmy willison
@@ -33,7 +33,7 @@
 // 
 // See README for usage
 
-(function ($, window, document, undefined) {
+(function ($, window, undefined) {
     
     // Use the HTML5 placeholder attribute at all times.
     // Validation will check that the placeholder is not
@@ -48,8 +48,9 @@
             submit: function () {
                 $(this).find('input, textarea').each(function () {
                     var $input = $(this);
-                    if($input.val() == $input.data('placeholder'))
+                    if( $input.val() == $input.data('placeholder') ) {
                         $input.val('');
+                    }
                 });
                 return true;
             },
@@ -63,8 +64,8 @@
         }, opts);
 
         return this.addClass(opts.placeholderClass).each(function () {
-            var input       = $(this);
-            var defaultText = input.attr('placeholder') || '';
+            var input       = $(this),
+                defaultText = input.attr('placeholder') || '';
 
             // Set the placeholder data for future reference
             input.data('placeholder', defaultText);
@@ -73,8 +74,9 @@
             input.removeAttr('placeholder');
 
             // Set the value if field is empty
-            if ($.trim(input.val()) === '')
+            if ($.trim(input.val()) === '') {
                 input.val(defaultText);
+            }
 
             // Focus and blurs, notice the class added and removed
             input.focus(function () {
@@ -90,4 +92,4 @@
             .closest('form').submit(opts.submit);
         });
     };
-})(jQuery, this, document);
+})(jQuery, this);
