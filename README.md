@@ -3,7 +3,7 @@
 Demo         - <a href="http://timmywillison.com/samples/outofplace/">http://timmywillison.com/samples/outofplace/</a><br/>
 GitHub       - <a href="http://github.com/timmywil/html5placeholders">http://github.com/timmywil/html5placeholders</a><br/>
 Source       - <a href="http://github.com/timmywil/html5placeholders/raw/master/jquery.outofplace.js">http://github.com/timmywil/html5placeholders/raw/master/jquery.outofplace.js</a> (3.2kb)<br/>
-(Minified)   - <a href="http://github.com/timmywil/html5placeholders/raw/master/jquery.outofplace.min.js">http://github.com/timmywil/html5placeholders/raw/master/jquery.outofplace.min.js</a> (<1kb)</br/>
+(Minified)   - <a href="http://github.com/timmywil/html5placeholders/raw/master/jquery.outofplace.min.js">http://github.com/timmywil/html5placeholders/raw/master/jquery.outofplace.min.js</a> (820b)</br/>
 
 License
 
