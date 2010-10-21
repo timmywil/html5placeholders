@@ -1,5 +1,5 @@
 /*!
-*   jquery.html5placeholders.js
+*   jquery.outofplace.js
 *   HTML5 placeholders for all browsers
 *   Copyright (c) 2010 timmy willison
 *   Dual licensed under the MIT and GPL licenses.
@@ -11,7 +11,7 @@
 // Demo         - http://timmywillison.com/samples/html5placeholders/
 // GitHub       - http://github.com/timmywil/html5placeholders
 // Source       - http://github.com/timmywil/requiredfields/raw/master/jquery.html5placeholders.js (3.2kb)
-// (Minified)   - http://github.com/timmywil/requiredfields/raw/master/jquery.html5placeholders.min.js (<1kb)
+// (Minified)   - http://github.com/timmywil/requiredfields/raw/master/jquery.html5placeholders.min.js (820b)
 // 
 // License
 // 
