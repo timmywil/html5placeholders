@@ -1,5 +1,5 @@
-/*
-*   jquery.outofplace.js
+/**
+*   @preserve jquery.outofplace.js
 *   HTML5 placeholders for all browsers
 *   Copyright (c) 2010 timmy willison
 *   Dual licensed under the MIT and GPL licenses.
@@ -48,7 +48,7 @@
             submit: function () {
                 $(this).find('input, textarea').each(function () {
                     var $input = $(this);
-                    if( $input.val() == $input.data('placeholder') ) {
+                    if( $input.val() === $input.data('placeholder') ) {
                         $input.val('');
                     }
                 });
@@ -63,7 +63,7 @@
             placeholderClass: 'place'
         }, opts);
 
-        return this.addClass(opts.placeholderClass).each(function () {
+        return this.each(function () {
             var input       = $(this),
                 defaultText = input.attr('placeholder') || '';
 
@@ -75,12 +75,12 @@
 
             // Set the value if field is empty
             if ($.trim(input.val()) === '') {
-                input.val(defaultText);
+                input.addClass(opts.placeholderClass).val(defaultText);
             }
 
             // Focus and blurs, notice the class added and removed
             input.focus(function () {
-                if (input.val() == defaultText) {
+                if (input.val() === defaultText) {
                     input.val('').removeClass(opts.placeholderClass);
                 }
             }).blur(function () {
