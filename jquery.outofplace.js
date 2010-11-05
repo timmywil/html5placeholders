@@ -33,7 +33,7 @@
 // 
 // See README for usage
 
-(function ($, window, undefined) {
+(function ($) {
     
     // Use the HTML5 placeholder attribute at all times.
     // Validation will check that the placeholder is not
@@ -63,33 +63,45 @@
             placeholderClass: 'place'
         }, opts);
 
+        /** Checks for browser autofill */
+        function check_autofill ( $input ) {
+            setTimeout(function() { 
+                var v = $input.val();
+                if ( v !== '' && v !== $input.data('placeholder') ) {
+                    $input.removeClass('place');
+                }
+            }, 00);
+        }
+        
         return this.each(function () {
-            var input       = $(this),
-                defaultText = input.attr('placeholder') || '';
+            var $input      = $(this),
+                defaultText = $input.attr('placeholder') || '';
 
             // Set the placeholder data for future reference
-            input.data('placeholder', defaultText);
+            $input.data('placeholder', defaultText);
 
             // Attribute no longer needed
-            input.removeAttr('placeholder');
+            $input.removeAttr('placeholder');
 
             // Set the value if field is empty
-            if ($.trim(input.val()) === '') {
-                input.addClass(opts.placeholderClass).val(defaultText);
+            if ( $.trim($input.val()) === '' ) {
+                $input.addClass( opts.placeholderClass ).val( defaultText );
             }
 
             // Focus and blurs, notice the class added and removed
-            input.focus(function () {
-                if (input.val() === defaultText) {
-                    input.val('').removeClass(opts.placeholderClass);
+            $input.focus(function () {
+                if ( $input.val() === defaultText ) {
+                    $input.val('').removeClass( opts.placeholderClass );
                 }
             }).blur(function () {
-                if ($.trim(input.val()) === '') {
-                    input.val(defaultText).addClass(opts.placeholderClass);
+                if ( $.trim($input.val()) === '' ) {
+                    $input.val( defaultText ).addClass( opts.placeholderClass );
                 }
             })
             // Bind the submit function
-            .closest('form').submit(opts.submit);
+            .closest('form').submit( opts.submit );
+            
+            check_autofill( $input );
         });
     };
 })(jQuery, this);
