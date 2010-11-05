@@ -104,4 +104,4 @@
             check_autofill( $input );
         });
     };
-})(jQuery, this);
+})(jQuery);
