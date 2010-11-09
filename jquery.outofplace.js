@@ -61,7 +61,7 @@
             // e.g. input.place { color: #666666; }
             // This creates a lot more flexibility for you and
             // keeps the js lightweight
-            placeholderClass: 'place'
+            placeClass: 'place'
         }, opts);
 
         /** Checks for browser autofill */
@@ -69,11 +69,11 @@
             setTimeout(function() { 
                 var v = $input.val();
                 if ( v === $input.data('placeholder') ) {
-                    $input.addClass( opts.placeholder );
+                    $input.addClass( opts.placeClass );
                 } else {
-                    $input.removeClass( opts.placeholder );
+                    $input.removeClass( opts.placeClass );
                 }
-            }, 100);
+            }, 300);
         }
         
         return this.each(function () {
@@ -89,11 +89,11 @@
             // Focus and blurs, notice the class added and removed
             $input.focus(function () {
                 if ( $input.val() === defaultText ) {
-                    $input.val('').removeClass( opts.placeholderClass );
+                    $input.val('').removeClass( opts.placeClass );
                 }
             }).blur(function () {
                 if ( $.trim($input.val()) === '' ) {
-                    $input.val( defaultText ).addClass( opts.placeholderClass );
+                    $input.val( defaultText ).addClass( opts.placeClass );
                 }
             }).blur()
             // Bind the submit function
