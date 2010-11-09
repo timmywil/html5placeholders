@@ -6,7 +6,7 @@
 *   http://timmywillison.com/licence/
 */
 
-// *Version: 1.0, Last updated: 9/27/2010*
+// *Version: 1.1, Last updated: 11/9/2010*
 // 
 // Demo         - http://timmywillison.com/samples/html5placeholders/
 // GitHub       - http://github.com/timmywil/html5placeholders
@@ -28,12 +28,13 @@
 //                   Chrome 4-5, Opera 9.6-10.5.
 // 
 // Release History
-// 
+//
+// 1.1   - (11/9/2010) Checks for browser autofill to accomodate placeholder class
 // 1.0   - (9/27/2010) Initial release
 // 
 // See README for usage
 
-(function ($) {
+;(function ($) {
     
     // Use the HTML5 placeholder attribute at all times.
     // Validation will check that the placeholder is not
@@ -67,10 +68,12 @@
         function check_autofill ( $input ) {
             setTimeout(function() { 
                 var v = $input.val();
-                if ( v !== '' && v !== $input.data('placeholder') ) {
-                    $input.removeClass('place');
+                if ( v === $input.data('placeholder') ) {
+                    $input.addClass( opts.placeholder );
+                } else {
+                    $input.removeClass( opts.placeholder );
                 }
-            }, 00);
+            }, 100);
         }
         
         return this.each(function () {
@@ -83,11 +86,6 @@
             // Attribute no longer needed
             $input.removeAttr('placeholder');
 
-            // Set the value if field is empty
-            if ( $.trim($input.val()) === '' ) {
-                $input.addClass( opts.placeholderClass ).val( defaultText );
-            }
-
             // Focus and blurs, notice the class added and removed
             $input.focus(function () {
                 if ( $input.val() === defaultText ) {
@@ -97,7 +95,7 @@
                 if ( $.trim($input.val()) === '' ) {
                     $input.val( defaultText ).addClass( opts.placeholderClass );
                 }
-            })
+            }).blur()
             // Bind the submit function
             .closest('form').submit( opts.submit );
             

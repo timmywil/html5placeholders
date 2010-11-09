@@ -1,4 +1,4 @@
-*Version: 1.0, Last updated: 9/27/2010*
+*Version: 1.1, Last updated: 11/9/2010*
 
 Demo         - <a href="http://timmywillison.com/samples/outofplace/">http://timmywillison.com/samples/outofplace/</a><br/>
 GitHub       - <a href="http://github.com/timmywil/html5placeholders">http://github.com/timmywil/html5placeholders</a><br/>
@@ -21,6 +21,7 @@ Chrome 4-5, Opera 9.6-10.5.
 
 Release History
 
+1.1   - (11/9/2010) Checks for browser autofill to accomodate placeholder class
 1.0   - (9/27/2010) Initial release
 
 *HTML5 placeholders across all browsers*
