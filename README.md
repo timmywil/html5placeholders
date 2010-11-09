@@ -15,13 +15,13 @@ Support and Testing
 
 Versions of jQuery and browsers this was tested on.
 
-jQuery Versions - 1.3.0-1.4.2
+jQuery Versions - 1.3.0-1.4.2<br/>
 Browsers Tested - Internet Explorer 6-8, Firefox 2-3.7, Safari 3-5,<br/>
 Chrome 4-5, Opera 9.6-10.5.
 
 Release History
 
-1.1   - (11/9/2010) Checks for browser autofill to accomodate placeholder class
+1.1   - (11/9/2010) Checks for browser autofill to accomodate placeholder class<br/>
 1.0   - (9/27/2010) Initial release
 
 *HTML5 placeholders across all browsers*
