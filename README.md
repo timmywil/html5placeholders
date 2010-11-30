@@ -15,7 +15,7 @@ Support and Testing
 
 Versions of jQuery and browsers this was tested on.
 
-jQuery Versions - 1.3.0-1.4.2<br/>
+jQuery Versions - 1.3.0-1.4.4<br/>
 Browsers Tested - Internet Explorer 6-8, Firefox 2-3.7, Safari 3-5,<br/>
 Chrome 4-6, Opera 9.6-10.5.
 
