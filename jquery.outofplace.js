@@ -8,10 +8,10 @@
 
 // *Version: 1.1, Last updated: 11/9/2010*
 // 
-// Demo         - http://timmywillison.com/samples/html5placeholders/
+// Demo         - http://timmywillison.com/samples/outofplace/
 // GitHub       - http://github.com/timmywil/html5placeholders
-// Source       - http://github.com/timmywil/requiredfields/raw/master/jquery.html5placeholders.js (3.2kb)
-// (Minified)   - http://github.com/timmywil/requiredfields/raw/master/jquery.html5placeholders.min.js (820b)
+// Source       - http://github.com/timmywil/requiredfields/raw/master/jquery.outofplace.js (3.2kb)
+// (Minified)   - http://github.com/timmywil/requiredfields/raw/master/jquery.outofplace.min.js (820b)
 // 
 // License
 // 
